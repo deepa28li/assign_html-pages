@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		div
+		{
+			box-shadow:0 0 10px black;
+			width: 400px;
+			height: 500px;
+			margin-left:auto;
+			margin-top: 100px;
+			margin-right: auto;
+			margin-bottom: 100px;
+			border-radius: 10px;
+			position: relative;
+			overflow:hidden;
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			transition: all 1s linear 0s;
+		}
+		div>#content
+		{
+			background-color: rgba(0, 0, 0, 0.3);
+			color: white;
+			padding: 5px;
+			text-align: center;
+			position: absolute;margin: 0px;
+			top: 0px;
+			left: 0px;
+
+			transform: translateY(100%);
+			transition: all 1s linear 0s;
+		}
+		div:hover>#content
+		{
+			transform: translateY(0%);
+		}
+		div>#child-1
+		{
+			background-color:rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			transition: all 1s linear 3s;
+
+		}
+		div:hover#child-1
+		{
+			transform: translateY(-100%);
+		}
+
+        div>#child-2
+		{
+			background-color:rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			transition: all 1s linear 2s;
+
+		}
+		div:hover#child-2
+		{
+			transform: translateY(100%);
+		}
+
+		div>#child-3
+		{
+			background-color:rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			transition: all 1s linear 1s;
+
+		}
+		div:hover#child-3
+		{
+			transform: translateX(-100%);
+		}
+		div>#child-4
+		{
+			background-color:rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			transition: all 1s linear 0s;
+
+		}
+		div:hover#child-4
+		{
+			transform: translateX(100%);
+		}
+		
+	</style>
+</head>
+<body>
+    <div>
+
+		<img src="{% static 'images/RD.jpg' %}" alt="image not found">
+		<h1><b>Ritesh Deshmukha</b></h1>
+		<p>
+			Ritesh Deshmukh made his Hindi film debut with the 2003 romance, Tujhe Meri Kasam opposite Genelia D'Souza.[2] He later appeared in Out of Control.[3] In his third film, Masti, a comic thriller, his role was widely disparaged. Regardless, the film performed well at the box office. He gained fame after his performance in Masti, which earned him two minor awards. He subsequently appeared Bardaasht and Naach, both of them being box-office duds.
+		</p>
+		<div id="child-1">
+			<h1><b>Ritesh Deshmukha</b></h1>
+			<br>
+			<p>
+			Ritesh Deshmukh made his Hindi film debut with the 2003 romance, Tujhe Meri Kasam opposite Genelia D'Souza.[2] He later appeared in Out of Control.[3] In his third film, Masti, a comic thriller, his role was widely disparaged. Regardless, the film performed well at the box office. He gained fame after his performance in Masti, which earned him two minor awards. He subsequently appeared Bardaasht and Naach, both of them being box-office duds.
+			</p>
+			<div id="child-2">
+				<h1><b>Ritesh Deshmukha</b></h1>
+				<br>
+				<p>
+				Ritesh Deshmukh made his Hindi film debut with the 2003 romance, Tujhe Meri Kasam opposite Genelia D'Souza.[2] He later appeared in Out of Control.[3] In his third film, Masti, a comic thriller, his role was widely disparaged. Regardless, the film performed well at the box office. He gained fame after his performance in Masti, which earned him two minor awards. He subsequently appeared Bardaasht and Naach, both of them being box-office duds.
+				</p>
+				<div id="child-3">
+					<h1><b>Ritesh Deshmukha</b></h1>
+					<br>
+					<p>
+					Ritesh Deshmukh made his Hindi film debut with the 2003 romance, Tujhe Meri Kasam opposite Genelia D'Souza.[2] He later appeared in Out of Control.[3] In his third film, Masti, a comic thriller, his role was widely disparaged. Regardless, the film performed well at the box office. He gained fame after his performance in Masti, which earned him two minor awards. He subsequently appeared Bardaasht and Naach, both of them being box-office duds.
+					</p>
+					<div id="child-4">
+						<h1><b>Ritesh Deshmukha</b></h1>
+						<br>
+						<p>
+						Ritesh Deshmukh made his Hindi film debut with the 2003 romance, Tujhe Meri Kasam opposite Genelia D'Souza.[2] He later appeared in Out of Control.[3] In his third film, Masti, a comic thriller, his role was widely disparaged. Regardless, the film performed well at the box office. He gained fame after his performance in Masti, which earned him two minor awards. He subsequently appeared Bardaasht and Naach, both of them being box-office duds.
+						</p>
+						
+					</div>
+
+				</div>	
+			</div>
+
+		</div>
+		
+	</div>  
+</body>
+</html>
